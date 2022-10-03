@@ -1,5 +1,11 @@
 cmake_minimum_required(VERSION 3.19)
 
+set(ENV{binary_io_DIR} C:/Util/Devel/vcpkg/vcpkg/packages/rsm-binary-io_x64-windows-custom/share/binary_io)
+set(ENV{spdlog_DIR} C:/Util/Devel/vcpkg/vcpkg/packages/spdlog_x64-windows-custom/share/spdlog)
+set(ENV{fmt_DIR} C:/Util/Devel/vcpkg/vcpkg/packages/fmt_x64-windows-custom/share/fmt)
+
+set(BOOST_ROOT C:/Util/Devel/vcpkg/vcpkg/installed/x64-windows-custom)
+
 option(SKSE_SUPPORT_XBYAK "Enables trampoline support for Xbyak." OFF)
 
 project(
